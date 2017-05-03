@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<style>
+.root-color {
+    background: #bdbdbd ;
+  }
+
+.my-image-border {
+    border-color: #757575;;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .main-font-theme {
+    color: white;
+    font-family: Arsenal;
+  }
+
+  .btn-circle {
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    line-height: 1.428571429;
+    border-radius: 15px;
+  }
+  .btn-circle.btn-lg {
+    height: 50px;
+    padding: 10px 16px;
+    line-height: 1.33;
+    border-radius: 25px;
+  }
+</style>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Personal Portfolio</title>
+
+    <!--Libraries and links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.google.com/specimen/Arsenal" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/47f1113041.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+
+
+  </head>
+
+  <body class="root-color">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container row">
+        <div class="navbar-header col-xs-8">
+          <a class="navbar-brand" href="#about">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Personal Portfolio
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse row col-xs-4">
+          <ul class="nav navbar-nav">
+            <!-- The first three elements are just used for styling the bar -->
+            <li class="disabled"><a href="#"></a></li>
+            <li class="disabled"><a href="#"></a></li>
+            <li class="disabled"><a href="#"></a></li>
+
+            <li class="active"><a href="#about">ABOUT</a></li>
+            <li class="active"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="active"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page container -->
+    <div class="container">
+      <!-- About Container -->
+      <div class="jumbotron container" id="about" style="background: #757575;">
+        <br /><br />
+        <div class="row">
+          <div class="col-xs-8">
+            <br /><br />
+            <h2 class="text-center main-font-theme">
+              Software Developer and Linux geek , with interest in Cosmology , Physics and music composing. Devoted to network management and system administration .
+            </h2>
+            <p class="text-center" style="color:#f48fb1;">
+              <b>________________________________________________ </b>&nbsp;<big><big><big>&lt;/&gt;</big></big></big>
+            </p>
+            <br />
+            <p class="text-center main-font-theme">
+              Software Developer - Programmer - Guitarist
+            </p>
+          </div>
+          <div class="col-xs-4"><a href="#"><img class="img-responsive my-image-border" src="me.jpg" alt="Me"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio container -->
+      <div class="jumbotron container" id="portfolio" style="background: #ec407a;">
+        <h2 class="text-center main-font-theme"><b>PORTFOLIO</b></h2>
+        <p class="text-center main-font-theme"><big>_______________________&nbsp;&nbsp;&lt;/&gt;&nbsp;&nbsp;_______________________</big></p>
+        <br /><br />
+        <div class="row">
+          <div class="col-xs-6">
+            <img src="cert1.jpg" alt="cert1" width="510" height="365"/>
+          </div>
+          <div class="col-xs-6">
+            <img src="cert2.jpg" alt="cert2" width="510" height="365"/>
+          </div>
+        </div>
+          <br /><br />
+          <hr/>
+        </div>
+
+        <!-- Contact me container -->
+        <div class="jumbotron container" id="contact" style="background: #9E9E9E;">
+          <h2 class="text-center main-font-theme"><b>CONTACT ME</b></h2>
+          <p class="text-center main-font-theme"><big>_______________________&nbsp;&nbsp;&lt;/&gt;&nbsp;&nbsp;_______________________</big></p>
+          <br /><br />
+          <div class="row">
+            <div class="col-xs-6" align="center">
+              <form action="https://postmail.invotes.com/send" method="post" id="email_form">
+                <input type="text" class="form-control form-control-lg" name="subject" placeholder="Email Address" /><br />
+                <textarea name="text" rows="3" class="form-control" placeholder="Message"></textarea>
+                <input type="hidden" name="access_token" value="g743gujazkfzjuaidve7tt6y" />
+                <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+                <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+                <br />
+                <input id="submit_form" type="submit" value="Send" />
+              </form>
+            </div>
+            <div class="col-xs-6">
+              <p class="text-left main-font-theme">
+                Want to get in touch with me? Be it to request more info about myself or my experience , to ask for my resume , random questions about the universe and the meaning of life ... just feel free to drop me a line anytime.
+                <br />
+                <br />
+                I promise to reply A.S.A.P.
+              </p>
+            </div>
+          </div>
+          <br /><br />
+          <hr/>
+        </div>
+
+        <!-- Footer container -->
+        <footer class="jumbotron container" style="background: #212121; ">
+          <div class="row">
+            <div class="col-xs-6">
+              <p style="size:25px; color:white;" class="text-center">
+                <b><big>ABOUT THIS PAGE</big></b>
+                <br/><br />
+                Made with<span class="fa-stack"><i class="fa fa-coffee"></i></span>and<span class="fa-stack"><i class="fa fa-music"></i></span><br />
+                By Dania Al-Refaie.
+              </p>
+            </div>
+            <div class="col-xs-6" align="center">
+              <p style="size:25px; color:white;" class="text-center">
+                <b><big>AROUND THE WEB</big></b>
+              </p>
+              <br />
+              <button type="button" class="btn btn-success btn-circle btn-lg" onclick="location.href = 'https://twitter.com/Dania801';"><i class="fa fa-twitter"></i></button> &nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-circle btn-lg btn-circle" style="background: #ec407a; color:white;" onclick="location.href = 'https://github.com/Dania801';"><i class="fa fa-github"></i></button>
+            </div>
+          </div>
+        </footer>
+      </div>
+  </body>
+</html>
